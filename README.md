@@ -16,10 +16,15 @@ Project ini dibuat dengan Android Studio pada Sistem Operasi Windows 10 (1909).
 It is still incomplete, and looks like this:
 
 ## Splash Screen
+<img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/TheSis_App/images/splash.png" />
 
 ## Login Page
 
+<img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/TheSis_App/images/login.png" />
+
 ## Main Menu
+
+
 
 ## Schematic
 
