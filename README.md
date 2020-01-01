@@ -4,23 +4,27 @@
     </a>
 </p>
 
-<a href=https://kanggara75.wordpress.com/> <h1 align=center>KAnggara75</h1>
+<a href=https://kanggara75.wordpress.com/> <h1 align=center>TheSiS App</h1>
 </a>
 
 
-A6 || ESP32 || GPS ||
+GPS Tracking
 ===================
 
-This is a breakout board that includes an ESP8266 and an integrated A6 module.
-It is best used with the [A6 ESP8266
-library](https://github.com/skorokithakis/A6lib).
+Project ini dibuat dengan Android Studio pada Sistem Operasi Windows 10 (1909).
 
 It is still incomplete, and looks like this:
 
+## Splash Screen
+
+## Login Page
+
+## Main Menu
+
 ## Schematic
 
-<img src="Projects/Sketch/images/schematic.png" />
+<img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/Sketch/images/schematic.png" />
 
 ## Board
 
-<img src="Projects/Sketch/images/board.png" />
+<img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/Sketch/images/board.png" />
