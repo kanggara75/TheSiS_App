@@ -17,12 +17,12 @@ It is still incomplete, and looks like this:
 
 ## Splash Screen
 <p align="center">
-<img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/TheSis_App/images/splash.png" />
+<img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/TheSiS_App/images/splash.png" />
 </p>
 
 ## Login Page
 <p align="center">
-<img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/TheSis_App/images/login.png" />
+<img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/TheSiS_App/images/login.png" />
 </p>
 
 ## Main Menu
