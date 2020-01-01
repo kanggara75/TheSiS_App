@@ -1,6 +1,6 @@
 <p align="center">
     <a href=https://kanggara75.wordpress.com/> 
-    <img src="Projects/Sketch/images/logo.png" width="150">
+    <img src="../TheSiS/tree/master/Projects/Sketch/images/logo.png" width="150">
     </a>
 </p>
 
