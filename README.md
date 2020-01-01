@@ -16,20 +16,16 @@ Project ini dibuat dengan Android Studio pada Sistem Operasi Windows 10 (1909).
 It is still incomplete, and looks like this:
 
 ## Splash Screen
+<p align="center">
 <img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/TheSis_App/images/splash.png" />
+</p>
 
 ## Login Page
-
+<p align="center">
 <img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/TheSis_App/images/login.png" />
+</p>
 
 ## Main Menu
 
-
-
-## Schematic
-
-<img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/Sketch/images/schematic.png" />
-
-## Board
-
-<img src="https://github.com/kanggara75/TheSiS/raw/master/Projects/Sketch/images/board.png" />
+## Android App Link
+<a href=https://github.com/kanggara75/TheSiS/> <h3 align=center>Hardware Breakout and Schematic Link</h3></a>
