@@ -7,6 +7,4 @@
     <string name="subtitle">Subtitle</string>
     <string name="login">Login</string>
     <string name="reset_password">Reset Password!</string>
-    <string name="login">Login</string>
-    <string name="reset_password">Reset Password!</string>
 </resources>
