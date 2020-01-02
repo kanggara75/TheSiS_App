@@ -10,7 +10,8 @@ import android.widget.ImageView;
 
 public class Splash extends AppCompatActivity {
 
-    private ImageView iv1, iv2, iv3;
+    private ImageView iv2;
+    private ImageView iv3;
 
     Animation animation;
 
@@ -19,9 +20,9 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        iv1 = (ImageView) findViewById(R.id.iv1);
-        iv2 = (ImageView) findViewById(R.id.iv2);
-        iv3 = (ImageView) findViewById(R.id.iv3);
+        ImageView iv1 = findViewById(R.id.iv1);
+        iv2 = findViewById(R.id.iv2);
+        iv3 = findViewById(R.id.iv3);
 
         animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.push_down);
         iv1.setAnimation(animation);
@@ -37,7 +38,7 @@ public class Splash extends AppCompatActivity {
             {
                 try
                 {
-                    sleep(1850);
+                    sleep(1000);
                     Intent intent = new Intent(getApplicationContext(), Login.class);
                     startActivity(intent);
                     finish();
