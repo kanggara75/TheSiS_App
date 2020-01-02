@@ -16,16 +16,14 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:contentDescription="@string/logo"
-        android:gravity="center|center_vertical"
-        app:srcCompat="@drawable/ic_logow" />
+        android:src="@drawable/ic_logow"/>
 
     <ImageView
         android:id="@string/title"
-        android:layout_width="290dp"
-        android:layout_height="133dp"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
         android:contentDescription="@string/title"
-        app:srcCompat="@drawable/title"
-        android:layout_below="@string/logo"/>
+        android:src="@drawable/ic_title"/>
 
     <ImageView
         android:id="@string/subtitle"
@@ -33,6 +31,5 @@
         android:layout_height="25dp"
         android:layout_marginBottom="135dp"
         android:contentDescription="@string/subtitle"
-        android:layout_below="@string/title"
         app:srcCompat="@drawable/subtitle" />
 </LinearLayout>
