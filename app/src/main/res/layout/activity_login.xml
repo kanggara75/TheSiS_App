@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@string/logo"
+            android:id="@+id/loginiv1"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:contentDescription="@string/logo"
@@ -23,26 +23,28 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/login112"
+        android:id="@+id/loginll2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/login111"
-        android:orientation="vertical"
         android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp">
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical">
 
         <EditText
-            android:layout_marginTop="15dp"
+            android:id="@+id/loginiv2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:background="@drawable/et_bg"
             android:drawableStart="@drawable/ic_user"
             android:drawablePadding="20dp"
             android:hint="@string/username"
-            android:inputType="text"
-            android:importantForAutofill="no"/>
+            android:importantForAutofill="no"
+            android:inputType="text" />
 
         <EditText
+            android:id="@+id/loginiv3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -50,23 +52,25 @@
             android:drawableStart="@drawable/ic_pass"
             android:drawablePadding="20dp"
             android:hint="@string/password"
-            android:inputType="textPassword"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
 
         <Button
+            android:id="@+id/loginiv4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login"
             android:layout_marginTop="30dp"
             android:background="@drawable/btn_bg"
-            android:textColor="@android:color/white"/>
+            android:text="@string/login"
+            android:textColor="@android:color/white" />
 
         <TextView
+            android:id="@+id/loginiv5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:text="@string/reset_password"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+            android:text="@string/reset_password"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </RelativeLayout>
