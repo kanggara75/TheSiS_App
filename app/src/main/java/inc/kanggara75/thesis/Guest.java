@@ -9,14 +9,13 @@ import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainMenu extends AppCompatActivity
-{
+public class Guest extends AppCompatActivity {
     Button Logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_menu);
+        setContentView(R.layout.activity_guest);
 
         Logout = findViewById(R.id.logout);
 
@@ -24,7 +23,7 @@ public class MainMenu extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-                Intent intToLogin = new Intent(MainMenu.this, Login.class);
+                Intent intToLogin = new Intent(Guest.this, Login.class);
                 startActivity(intToLogin);
             }
         });

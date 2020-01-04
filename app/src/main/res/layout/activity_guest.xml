@@ -9,7 +9,16 @@
     android:background="#355F67"
     android:gravity="center|center_vertical"
     android:orientation="vertical"
-    tools:context=".MainMenu">
+    tools:context=".Guest">
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_login"
+        android:layout_marginBottom="50dp"
+        android:text="@string/keluar"
+        android:textColor="@android:color/white"/>
 
     <ImageView
         android:id="@+id/iv1"
@@ -17,13 +26,4 @@
         android:layout_height="200dp"
         android:contentDescription="@string/logo"
         app:srcCompat="@drawable/ic_logow"/>
-
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_logout"
-        android:layout_marginTop="50dp"
-        android:text="@string/logout"
-        android:textColor="@android:color/white"/>
 </LinearLayout>

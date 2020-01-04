@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class Login extends AppCompatActivity
 {
     EditText username, password;
-    Button signin;
+    Button signin, mguest;
 
     Animation animation;
     FirebaseAuth login;
@@ -43,6 +43,15 @@ public class Login extends AppCompatActivity
         username = findViewById(R.id.loginiv2);
         password = findViewById(R.id.loginiv3);
         signin = findViewById(R.id.loginiv4);
+        mguest = findViewById(R.id.loginiv5);
+
+        mguest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(Login.this, Guest.class);
+                startActivity(j);
+            }
+        });
 
         loginListener = new FirebaseAuth.AuthStateListener()
         {
@@ -94,7 +103,7 @@ public class Login extends AppCompatActivity
                         {
                             if (!task.isSuccessful())
                             {
-                                Toast.makeText(Login.this, "Login Fail, Try Again",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Login.this, "Username or Password Incorrect, Login Fail, Try Again",Toast.LENGTH_LONG).show();
                             }
                             else
                             {
