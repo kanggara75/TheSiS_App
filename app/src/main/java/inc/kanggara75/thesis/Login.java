@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -73,6 +74,43 @@ public class Login extends AppCompatActivity
             }
         };
 
+        password.setOnKeyListener(new View.OnKeyListener()
+        {
+            public boolean onKey(View v, int keyCode, KeyEvent event)
+            {
+                String user = username.getText().toString();
+                String pass = password.getText().toString();
+                if (event.getAction() == KeyEvent.ACTION_DOWN)
+                {
+                    switch (keyCode)
+                    {
+                        case KeyEvent.KEYCODE_DPAD_CENTER:
+                        case KeyEvent.KEYCODE_ENTER:
+                            login.signInWithEmailAndPassword(user, pass).addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>()
+                            {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task)
+                                {
+                                    if (task.isSuccessful())
+                                    {
+                                        Intent intToMainMenu = new Intent(Login.this, MainMenu.class);
+                                        startActivity(intToMainMenu);
+                                    }
+                                    else
+                                    {
+                                        Toast.makeText(Login.this, "Username or Password Incorrect, Login Fail, Try Again",Toast.LENGTH_LONG).show();
+
+                                    }
+                                }
+                            });
+                        default:
+                            break;
+                    }
+                }
+                return false;
+            }
+        });
+
         signin.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -90,32 +128,24 @@ public class Login extends AppCompatActivity
                     password.setError("Your Password is Blank, Enter your password Please");
                     password.requestFocus();
                 }
-                else if(user.isEmpty() && pass.isEmpty())
-                {
-                    Toast.makeText(Login.this, "Field Are Empty!!",Toast.LENGTH_SHORT).show();
-                }
-                else if(!(user.isEmpty() && pass.isEmpty()))
-                {
+                else {
                     login.signInWithEmailAndPassword(user, pass).addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>()
                     {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task)
                         {
-                            if (!task.isSuccessful())
-                            {
-                                Toast.makeText(Login.this, "Username or Password Incorrect, Login Fail, Try Again",Toast.LENGTH_LONG).show();
-                            }
-                            else
+                            if (task.isSuccessful())
                             {
                                 Intent intToMainMenu = new Intent(Login.this, MainMenu.class);
                                 startActivity(intToMainMenu);
                             }
+                            else
+                            {
+                                Toast.makeText(Login.this, "Username or Password Incorrect, Login Fail, Try Again",Toast.LENGTH_LONG).show();
+
+                            }
                         }
                     });
-                }
-                else
-                {
-                    Toast.makeText(Login.this, "Error!",Toast.LENGTH_SHORT).show();
                 }
             }
         });
