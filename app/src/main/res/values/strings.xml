@@ -15,4 +15,7 @@
     <string name="alarm">Alarm</string>
     <string name="help">Help</string>
     <string name="account">Account</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="reset">Reset</string>
+    <string name="dropdown">Dropdown</string>
 </resources>

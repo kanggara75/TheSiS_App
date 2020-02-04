@@ -12,6 +12,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,6 +21,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import org.w3c.dom.Text;
+
 public class Login extends AppCompatActivity
 {
     EditText username, password;
@@ -27,6 +30,8 @@ public class Login extends AppCompatActivity
 
     Animation animation;
     FirebaseAuth login;
+
+    TextView rst;
 
     private FirebaseAuth.AuthStateListener loginListener;
 
@@ -45,6 +50,15 @@ public class Login extends AppCompatActivity
         password = findViewById(R.id.loginiv3);
         signin = findViewById(R.id.loginiv4);
         mguest = findViewById(R.id.loginiv5);
+        rst = findViewById(R.id.rst_btn);
+
+        rst.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(Login.this, reset.class);
+                startActivity(j);
+            }
+        });
 
         mguest.setOnClickListener(new View.OnClickListener() {
             @Override

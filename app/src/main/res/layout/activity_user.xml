@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userlv0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9f9"
+    android:gravity="start|center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainMenu">
+
+    <LinearLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#f8f8f8"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/top2"
+            android:layout_width="380sp"
+            android:layout_height="wrap_content"
+            android:background="#f8f8f8"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/username"
+                android:textStyle="bold"
+                android:text="@string/account"/>
+
+            <ImageView
+                android:id="@+id/user_down"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_down"
+                android:contentDescription="@string/dropdown" />
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/user_menu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_menu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_below="@+id/top1">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:paddingStart="10dp"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/ic_logow"
+            tools:ignore="RtlSymmetry,UnusedAttribute" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bott_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_nav" />
+</RelativeLayout>
