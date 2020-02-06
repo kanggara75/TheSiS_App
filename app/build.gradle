@@ -34,6 +34,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.2.0'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    //noinspection GradleCompatible
 }
 
 apply plugin: 'com.google.gms.google-services'
