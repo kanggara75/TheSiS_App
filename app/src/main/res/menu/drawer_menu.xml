@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mail"
+            android:icon="@drawable/ic_mail"
+            android:title="Mail" />
+        <item
+            android:id="@+id/nav_place"
+            android:icon="@drawable/ic_place"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/ic_alarm"
+            android:title="@string/alarm" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="@string/help" />
+    </group>
+
+    <item android:title="Contact Us">
+        <menu>
+            <item
+                android:id="@+id/nav_whatsapp"
+                android:icon="@drawable/ic_wa"
+                android:title="Whatsapp" />
+            <item
+                android:id="@+id/nav_web"
+                android:icon="@drawable/ic_web"
+                android:title="Website" />
+        </menu>
+    </item>
 
 </menu>
